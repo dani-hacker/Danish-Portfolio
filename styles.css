@@ -1,0 +1,157 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #121E28;
+    font-family: 'Pally', sans-serif;
+    margin:0 auto;
+}
+h1{
+    color: #ffffff;
+    font-size: 50px;
+    margin: 25px 0;
+}
+p{
+    color: #9EA4AA;
+}
+
+span{
+    color: #FE715A;
+    font-weight: 700;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*position: fixed;*/
+    padding: 0px 80px ;
+    
+}
+header h1{
+    color: #FE715A;
+    font-size: 40px;
+    font-weight: 700;
+}   
+
+nav ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #FE715A;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 80px ;
+    align-items: center;
+}
+
+.profile-image{
+    width: 250px;
+    border-radius: 10px;
+}
+
+button{
+    background-color: #FE715A;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#intro p{
+    font-size: 40px;
+    color: #9EA4AA;
+}
+
+.lang{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: -42px 0px 0px 0px;
+    background-color: #17232D;
+    padding: 20px 0;
+}
+
+.lang p{
+    color: #404C53;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+#about-left{
+    flex: 1;
+    padding: 20px;
+    border-left: #FE715A 2px solid;
+}
+
+#about-left div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+#about-left i{
+    font-size: 40px;
+    color: #9EA4AA;
+    margin: 10px 0;
+}
+
+#about-left h3{
+    font-size: 22px;
+    color: #9EA4AA;
+}
+
+#about-right{
+    flex: 1;
+    padding: 20px;
+}
+.about-skills {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.about-skills h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about-skills p {
+    font-size: 16px;
+    color: #9EA4AA;
+}
+
+
+
