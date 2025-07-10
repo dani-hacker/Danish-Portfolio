@@ -86,9 +86,13 @@ button{
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
+    color: #ffffff;
 }
-
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
 
 
 .social{
@@ -259,11 +263,17 @@ button{
         font-weight: 700;
     }
 
+    button{
+        margin: 20px 0;
+    }
 
     header {
         flex-direction: row;
-        padding: 0px 10px;
+        padding: 0px 20px;
         margin: 5px 0;
+    }
+    header h1{
+        font-size: 30px;
     }
     nav ul {
         display: none;
@@ -288,8 +298,9 @@ button{
         align-self: center;
     }
     .profile-image {
-        width: 65%;
-        margin-bottom: -10px;
+        width: 75%;
+        margin-top: 10px;
+        margin-bottom: -60px;
     }
     .lang{
         display: flex;
