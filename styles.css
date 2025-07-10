@@ -367,7 +367,52 @@ a{
 
 
 @media  screen and (min-width: 481px) and (max-width: 1280px) {
-    
+    h1{
+        color: #ffffff;
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    h2{
+        color: #ffffff;
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    h6{
+        color: #9EA4AA;
+        font-size: 30px;
+        font-weight: 400;
+        margin: 0px;
+    }
+    p{
+        color: #9EA4AA;
+        font-size: 18px;
+    }
+
+    span{
+        color: #FE715A;
+        font-weight: 700;
+    }
+
+    .profile-image{
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    #about-right   h1{
+        font-size: 30px;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .about-skills p{
+        text-align: center;
+    }
+    .project-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
     .project-item{
         width: 100%;
         max-width: 300px;
