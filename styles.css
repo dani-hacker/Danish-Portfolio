@@ -203,51 +203,55 @@ a{
     font-size: 16px;
     color: #9EA4AA;
 }
-
-.projects-row {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 20px;
-}
-
-.project-description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
 .project-list {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap; /* wrap on smaller screens */
+    justify-content: center; /* center align all cards */
     gap: 20px;
     margin-top: 30px;
+    width: 100%;
 }
+
 .project-item {
     background-color: #17232D;
     padding: 20px;
+    width: 300px; /* fixed width for uniformity */
+    height: 350px; /* fixed height for all cards */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center; border-radius: 10px;
-     text-align: center;
+    justify-content: flex-start; /* content starts from top */
+    border-radius: 10px;
+    text-align: center;
     box-sizing: border-box;
+    overflow: hidden; /* ensures images don't overflow */
+    transition: transform 0.3s;
 }
-.project-item img {
-        width: 100%;
-        height: 180px; 
-        object-fit: cover;
-        border-radius: 8px;
-        margin-bottom: 15px;
-    }
 
-.project-list h2{
-    font-size: 20px;
-    margin: 15px 0;
+.project-item:hover {
+    transform: translateY(-5px); /* subtle hover effect */
+}
+
+.project-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* maintains aspect ratio and fills box */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.project-item a:hover {
+    color: #FE715A;
+}
+
+.project-item p {
+    font-size: 14px;
+    color: #cccccc;
 }
 
 .service-list{
@@ -435,6 +439,10 @@ footer{
         margin-top: 10px;
         margin-bottom: -60px;
     }
+    .project-item a {
+    color: #FE715A ;
+    }
+
     .lang{
         display: flex;
         justify-content: space-between;
@@ -580,6 +588,10 @@ footer {
         width: 300px;
         border-radius: 10px;
     }
+    .project-item a {
+    color: #FE715A ;
+    }
+
 
     #about-right   h1{
         font-size: 30px;
