@@ -440,7 +440,7 @@ footer{
         margin-bottom: -60px;
     }
     .project-item a {
-    color: #FE715A ;
+    color: #FE715A !important;
     }
 
     .lang{
